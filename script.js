@@ -8,10 +8,10 @@ const person = {
     complextion: "Dark"
 }
 
-function deleteProperty(property) { //I define my function and pass in PROPERTY in the parameter
+function deleteProperty(object, property) { //I define my function and pass in PROPERTY in the parameter
     // Using the delete property, I added the object follow by the property i want to remove
-    delete person.age;
+    delete object.age;
     //I used my return method to bring back the rest of the object once the function above as been perform
-    return person;
+    return object;
 }
 console.log(deleteProperty(person));
