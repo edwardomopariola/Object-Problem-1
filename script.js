@@ -10,8 +10,10 @@ const person = {
 
 function deleteProperty(object, property) { //I define my function and pass in PROPERTY in the parameter
     // Using the delete property, I added the object follow by the property i want to remove
-    delete object.age;
+    delete object[property]
     //I used my return method to bring back the rest of the object once the function above as been perform
     return object;
 }
-console.log(deleteProperty(person));
+ console.log(deleteProperty(person, "age"));
+
+
